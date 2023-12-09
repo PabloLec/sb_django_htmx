@@ -1,0 +1,9 @@
+{% if title and author and date and color %}
+<div class="flex justify-center items-center h-96 w-64 rounded-lg" style="background-color: {{ color }};">
+    <div class="text-center">
+        <h2 class="text-2xl font-bold mb-2">{{ title }}</h2>
+        <p class="text-lg mb-2">{{ author }}</p>
+        <p class="text-sm">{{ date }}</p>
+    </div>
+</div>
+{% endif %}

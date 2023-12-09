@@ -1,0 +1,11 @@
+services:
+  sb_django_htmx:
+    image: python:3.12
+    container_name: sb_django_htmx
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: /bin/bash -c "pip install poetry && cd /app && poetry install && poetry run python manage.py runserver 0.0.0.0:8000"

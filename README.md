@@ -6,7 +6,7 @@ This project is a demonstration of integrating Django with HTMX to achieve parti
 responsive user experience. The primary goal is to explore the capabilities of HTMX in enhancing Django applications,
 focusing on reducing full page reloads and increasing interactivity with minimal use of JavaScript.
 
-## Project Description
+## Project description
 
 The application is a Django-based project utilizing a SQLite database, populated with a collection of books available
 from the Project Gutenberg. The interface provides users with two main interactive features:
@@ -19,3 +19,8 @@ from the Project Gutenberg. The interface provides users with two main interacti
 
 No JavaScript was written for the behavior. The only two dependencies are therefore HTMX and Tailwind for a more
 pleasant style.
+
+## How to run
+
+- `docker-compose up`
+- Go to http://localhost:8000

@@ -1,4 +1,8 @@
 from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+from .import_books import import_gutenberg_books
+
+
+def import_books(request):
+    import_gutenberg_books()
+    return HttpResponse("Books imported")

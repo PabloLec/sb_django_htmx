@@ -160,6 +160,21 @@ asgiref = ">=3.6"
 Django = ">=3.2"
 
 [[package]]
+name = "django-htmx"
+version = "1.17.2"
+description = "Extensions for using Django with htmx."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "django-htmx-1.17.2.tar.gz", hash = "sha256:4089f2ed38727e9846c2f4cd1daddf6b010c7be8d834cfbcffc8c5ecf445c04e"},
+    {file = "django_htmx-1.17.2-py3-none-any.whl", hash = "sha256:f4971432d2ca45dbb31d9b58add1c50ae54354afe4bf59cafd591b1711b502c0"},
+]
+
+[package.dependencies]
+asgiref = ">=3.6"
+Django = ">=3.2"
+
+[[package]]
 name = "django-tailwind"
 version = "3.6.0"
 description = "Tailwind CSS Framework for Django projects"
@@ -255,4 +270,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "12fe1e242403bd8543a02528fef3c48f859ed5a53bcb77aa389b961eb0f5bec6"
+content-hash = "d61d149df3747f2d4ff9efbdf548eb7fb80382d429aa7c1c124a42d0cf8fc640"

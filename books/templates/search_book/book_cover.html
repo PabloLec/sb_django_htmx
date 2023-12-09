@@ -1,9 +1,33 @@
-{% if title and author and date and color %}
-<div class="flex justify-center items-center h-96 w-64 rounded-lg" style="background-color: {{ color }};">
-    <div class="text-center">
-        <h2 class="text-2xl font-bold mb-2">{{ title }}</h2>
-        <p class="text-lg mb-2">{{ author }}</p>
-        <p class="text-sm">{{ date }}</p>
+<div id="book-cover-container" class="flex justify-center items-center h-full py-10" style="max-height: calc(85vh);">
+    {% if title and author and date and color %}
+    <div class="book-cover relative border-gray-200 shadow-lg rounded-lg overflow-hidden w-full mx-10"
+         style="background-color: {{ color }};">
+        <div class="color-filter absolute top-0 bottom-0 left-0 right-0"></div>
+        <div class="content absolute top-0 bottom-0 left-0 right-0">
+            <h2 class="text-2xl font-bold mb-2">{{ title }}</h2>
+            <p class="text-lg mb-2">{{ author }}</p>
+            <p class="text-sm">{{ date }}</p>
+        </div>
     </div>
+    {% endif %}
 </div>
-{% endif %}
+
+<style>
+    .book-cover::before {
+        content: "";
+        display: block;
+        padding-top: 150%;
+    }
+    .book-cover .color-filter {
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+    }
+    .book-cover .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        z-index: 2;
+    }
+</style>

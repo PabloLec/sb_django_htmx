@@ -10,6 +10,7 @@ python = "^3.12"
 django = "^5.0"
 requests = "^2.31.0"
 django-tailwind = {extras = ["reload"], version = "^3.6.0"}
+django-htmx = "^1.17.2"
 
 
 [build-system]

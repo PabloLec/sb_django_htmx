@@ -9,12 +9,12 @@ focusing on reducing full page reloads and increasing interactivity with minimal
 ## Project description
 
 The application is a Django-based project utilizing a SQLite database, populated with a collection of books available
-from the Project Gutenberg. The interface provides users with two main interactive features:
+from the Project Gutenberg. The interface provides users with two interactive features:
 
-1. **Book Search**: Users can search for books by their titles. The search functionality is designed to be
+1. **Book search**: Users can search for books by their titles. The search functionality is designed to be
    case-insensitive and can match partial titles, allowing for flexible user queries.
 
-2. **Book Cover Display**: Upon clicking on a search result, users can view a representation of the book's
+2. **Book cover display**: Upon clicking on a search result, users can view a representation of the book's
    cover. The cover is a simplified placeholder generated using the book's information.
 
 No JavaScript was written for the behavior. The only two dependencies are therefore HTMX and Tailwind for a more
